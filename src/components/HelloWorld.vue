@@ -21,6 +21,12 @@
     in your IDE for a better DX
   </p>
   <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
+
+
+  <h1 class="font-bold underline">
+    Hello world!
+  </h1>
+
 </template>
 
 
