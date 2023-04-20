@@ -1,63 +1,21 @@
 <template>
-    <NavBar/>
-    <section id="sobre-mi" class=" h-[500px] flex items-center">
-      <div class="wave h-[400px] w-full"></div>
-      <p>
-        seccion-1
-      </p>
+	<NavBar />
+	<SobreMi />
+	<section id="formacion" class="h-[500px] flex items-center bg-red-400">
+		<p>seccion-2</p>
+	</section>
+	<section id="proyectos" class="h-[500px] flex items-center bg-green-400">
+		<p>seccion-3</p>
+	</section>
 
-    </section>
-    <section id="formacion" class=" h-[500px] flex items-center bg-red-400">
-      <p>
-        seccion-2
-      </p>
-
-    </section>
-    <section id="proyectos" class="  h-[500px] flex items-center bg-green-400">
-
-      <p>
-        seccion-3
-      </p>
-
-    </section>
-
-    <section id="contacto" class="  h-[700px] flex items-center bg-yellow-400">
-
-<p>
-  seccion-4
-</p>
-
-</section>
+	<section id="contacto" class="h-[700px] flex items-center bg-yellow-400">
+		<p>seccion-4</p>
+	</section>
 </template>
 
 <script setup>
 import NavBar from './components/NavBar.vue';
+import SobreMi from './layouts/SobreMi.vue';
 </script>
 
-<style scoped>
-
-.wave{
-  background-color: #35495e;
-  position: absolute;
-  z-index: -1;
-  animation: waves 10s ease-in-out infinite;
-  transition: all 0.3s ease;
-  top: 0;
-
-}
-
-
-@keyframes waves {
-  0%,100%{
-    clip-path: polygon(100% 0%, 0% 0% , 0.00% 86.76%, 2.00% 86.72%, 4.00% 86.59%, 6.00% 86.38%, 8.00% 86.09%, 10.00% 85.72%, 12.00% 85.27%, 14.00% 84.75%, 16.00% 84.17%, 18.00% 83.53%, 20.00% 82.84%, 22.00% 82.10%, 24.00% 81.32%, 26.00% 80.51%, 28.00% 79.68%, 30.00% 78.84%, 32.00% 77.99%, 34.00% 77.15%, 36.00% 76.31%, 38.00% 75.50%, 40.00% 74.71%, 42.00% 73.96%, 44.00% 73.26%, 46.00% 72.60%, 48.00% 72.01%, 50.00% 71.47%, 52.00% 71.01%, 54.00% 70.62%, 56.00% 70.31%, 58.00% 70.07%, 60.00% 69.93%, 62.00% 69.86%, 64.00% 69.88%, 66.00% 69.99%, 68.00% 70.18%, 70.00% 70.45%, 72.00% 70.80%, 74.00% 71.23%, 76.00% 71.73%, 78.00% 72.30%, 80.00% 72.92%, 82.00% 73.60%, 84.00% 74.33%, 86.00% 75.10%, 88.00% 75.90%, 90.00% 76.73%, 92.00% 77.57%, 94.00% 78.42%, 96.00% 79.26%, 98.00% 80.10%, 100.00% 80.92%);
-
-  }
-
-  50%{
-    clip-path: polygon(100% 0%, 0% 0% , 0.00% 86.76%, 2.00% 86.65%, 4.00% 86.31%, 6.00% 85.77%, 8.00% 85.02%, 10.00% 84.09%, 12.00% 83.02%, 14.00% 81.81%, 16.00% 80.51%, 18.00% 79.16%, 20.00% 77.78%, 22.00% 76.41%, 24.00% 75.10%, 26.00% 73.87%, 28.00% 72.76%, 30.00% 71.80%, 32.00% 71.01%, 34.00% 70.41%, 36.00% 70.03%, 38.00% 69.87%, 40.00% 69.93%, 42.00% 70.21%, 44.00% 70.71%, 46.00% 71.41%, 48.00% 72.30%, 50.00% 73.34%, 52.00% 74.52%, 54.00% 75.80%, 56.00% 77.15%, 58.00% 78.52%, 60.00% 79.89%, 62.00% 81.22%, 64.00% 82.47%, 66.00% 83.61%, 68.00% 84.61%, 70.00% 85.45%, 72.00% 86.09%, 74.00% 86.52%, 76.00% 86.74%, 78.00% 86.73%, 80.00% 86.50%, 82.00% 86.04%, 84.00% 85.39%, 86.00% 84.54%, 88.00% 83.53%, 90.00% 82.38%, 92.00% 81.12%, 94.00% 79.79%, 96.00% 78.42%, 98.00% 77.04%, 100.00% 75.70%);
-  }
-  
-}
-
-
-</style>
+<style scoped></style>
