@@ -21,3 +21,30 @@ export const icons = [
   },
   {},
 ];
+
+export const videoItems = [
+  {
+    titulo: 'Proyecto',
+    descripcion:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi recusandae suscipit nisi similique. Repellat dolores suscipit, ab fugit deleniti quis eius fuga fugiat accusamus possimus? Quis alias neque error voluptas.',
+    link: '/video/clack.mp4',
+  },
+  {
+    titulo: 'Proyecto',
+    descripcion:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi recusandae suscipit nisi similique. Repellat dolores suscipit, ab fugit deleniti quis eius fuga fugiat accusamus possimus? Quis alias neque error voluptas.',
+    link: '/video/clack.mp4',
+  },
+  {
+    titulo: 'Proyecto',
+    descripcion:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi recusandae suscipit nisi similique. Repellat dolores suscipit, ab fugit deleniti quis eius fuga fugiat accusamus possimus? Quis alias neque error voluptas.',
+    link: '/video/clack.mp4',
+  },
+  {
+    titulo: 'Proyecto',
+    descripcion:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi recusandae suscipit nisi similique. Repellat dolores suscipit, ab fugit deleniti quis eius fuga fugiat accusamus possimus? Quis alias neque error voluptas.',
+    link: '/video/clack.mp4',
+  },
+];

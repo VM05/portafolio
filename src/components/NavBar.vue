@@ -12,8 +12,8 @@
           :href="item.url"
           class="hover:text-green-600 transition hover:font-semibold"
           :class="
-            ({ 'text-green-600 font-semibold': activeMenuItem == item.id },
-            index === 0 ? 'min-w-[60px]' : 'min-w-[80px]')
+            { 'text-green-600 font-semibold': activeMenuItem == item.id },
+            index === 0 ? 'min-w-[60px]' : 'min-w-[80px]'
           "
         >
           {{ item.name }}
@@ -30,7 +30,7 @@
   const scrollPosition = ref(0);
   const initialPos = ref();
   const verdadero = ref();
-  const activeMenuItem = ref(null);
+  const activeMenuItem = ref('inicio');
 
   const scrollHandler = () => {
     const sections = document.querySelectorAll('section');
@@ -40,15 +40,15 @@
     let observer;
 
     if (sections) {
-      observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
+      observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
           if (entry.isIntersecting) {
             activeMenuItem.value = `${entry.target.id}`;
           }
         });
       }, options);
 
-      sections.forEach((section) => {
+      sections.forEach(section => {
         observer.observe(section);
       });
     }
