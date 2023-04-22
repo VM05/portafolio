@@ -56,7 +56,7 @@
   img {
     width: 350px;
     position: relative;
-    border-radius: 40%;
+
     z-index: 0;
     filter: drop-shadow(2px 0px 10px rgb(0 0 0 / 0.4));
   }

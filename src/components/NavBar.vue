@@ -1,6 +1,6 @@
 <template>
   <div
-    class="shadow-md bg-white p-5 w-full transition-all fixed z-10"
+    class="shadow-md bg-white p-5 w-full transition-all fixed z-50"
     :class="verdadero ? '-top-24' : 'top-0'"
   >
     <div class="w-[1280px] flex flex-row justify-between mx-auto dark">
@@ -40,15 +40,15 @@
     let observer;
 
     if (sections) {
-      observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
+      observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
           if (entry.isIntersecting) {
             activeMenuItem.value = `${entry.target.id}`;
           }
         });
       }, options);
 
-      sections.forEach(section => {
+      sections.forEach((section) => {
         observer.observe(section);
       });
     }
