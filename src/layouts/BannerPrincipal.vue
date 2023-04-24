@@ -19,7 +19,11 @@
         </div>
       </div>
       <div class="portfolio-picture relative w-1/2">
-        <img src="../assets/victorrecortado.webp" alt="" class="ml-auto -top-20" />
+        <img
+          src="../assets/victor-mejorado.webp"
+          alt="victor-montiel"
+          class="ml-auto -top-20 animacion-victor"
+        />
       </div>
     </div>
   </section>
@@ -53,10 +57,27 @@
     z-index: -1;
   }
 
+  .animacion-victor {
+    transform: translateX(50px);
+    animation: appear 1s forwards;
+    opacity: 0;
+    animation-delay: 1s;
+  }
+
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
   img {
     width: 350px;
     position: relative;
-
     z-index: 0;
     filter: drop-shadow(2px 0px 10px rgb(0 0 0 / 0.4));
   }

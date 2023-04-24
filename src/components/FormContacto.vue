@@ -4,17 +4,26 @@
     <div class="flex gap-5">
       <div class="text-container w-1/2"></div>
       <div class="w-1/2">
-        <form class="flex gap-5 flex-col bg-slate-100 p-5 rounded-lg shadow-2xl">
+        <form
+          class="flex gap-5 flex-col bg-slate-100 p-5 rounded-lg shadow-2xl"
+          id="form_contacto"
+          @submit.prevent="enviarMail"
+        >
           <div>
             <label for="nombre">Nombre</label>
-            <input type="text" class="border border-slate-300" v-model="formContacto.nombre" />
+            <input
+              type="text"
+              class="border border-slate-300"
+              v-model="formContacto.nombre"
+              name="user_name"
+            />
           </div>
 
           <div>
             <label for="email">Email</label>
             <input
               type="email"
-              name="email"
+              name="user_email"
               class="border border-slate-300"
               v-model="formContacto.email"
             />
@@ -23,7 +32,7 @@
           <div>
             <label for="sugerencia">Mensaje</label>
             <textarea
-              name=""
+              name="user_message"
               id=""
               rows="5"
               class="w-full rounded-lg p-3 font-light border border-slate-300"
@@ -44,7 +53,9 @@
 </template>
 <script setup>
   import Button from './Button.vue';
-  import { ref, reactive } from 'vue';
+  import { ref, reactive, watch } from 'vue';
+  import { validateEmail, isFormEmpty } from '../helpers/validaciones';
+  import emailjs from '@emailjs/browser';
 
   const formContacto = reactive({
     nombre: '',
@@ -52,6 +63,26 @@
     mensaje: '',
   });
   const error = ref(true);
+
+  watch(formContacto, () => {
+    console.log(validateEmail(formContacto.email));
+
+    console.log(isFormEmpty(formContacto));
+
+    if (validateEmail(formContacto.email) && !isFormEmpty(formContacto)) {
+      error.value = false;
+    } else {
+      error.value = true;
+    }
+  });
+
+  const enviarMail = async () => {
+    const formulario = document.getElementById('form_contacto');
+    console.log(
+      emailjs.sendForm('service_nxintto', 'template_bg9hxen', formulario, 'u3dYQ9aE_YOEkW79M')
+    );
+    await emailjs.sendForm('service_nxintto', 'template_bg9hxen', formulario, 'u3dYQ9aE_YOEkW79M');
+  };
 </script>
 
 <style scoped>

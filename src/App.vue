@@ -9,6 +9,7 @@
     <MisProyectos :data="videoItems" />
     <FormContacto />
   </ContainerView>
+  <Footer />
 </template>
 
 <script setup>
@@ -18,6 +19,7 @@
   import ContainerView from './components/ContainerView.vue';
   import { videoItems } from './helpers/constants';
   import FormContacto from './components/FormContacto.vue';
+  import Footer from './components/Footer.vue';
 </script>
 
 <style scoped></style>
