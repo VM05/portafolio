@@ -3,9 +3,7 @@
 
   <BannerPrincipal />
   <ContainerView>
-    <section id="formacion" class="h-[500px] flex items-center bg-red-400">
-      <p>seccion-2</p>
-    </section>
+    <SobreMi />
     <MisProyectos :data="videoItems" />
     <FormContacto />
   </ContainerView>
@@ -20,6 +18,7 @@
   import { videoItems } from './helpers/constants';
   import FormContacto from './components/FormContacto.vue';
   import Footer from './components/Footer.vue';
+  import SobreMi from './layouts/SobreMi.vue';
 </script>
 
 <style scoped></style>

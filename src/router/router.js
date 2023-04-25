@@ -1,24 +1,20 @@
-import { createWebHistory, createRouter } from "vue-router";
+// import { createWebHistory, createRouter } from "vue-router";
 
+// const router = createRouter({
+//   history: createWebHistory(),
 
-const router = createRouter({
-    history: createWebHistory(),
+//   routes: [],
 
-    routes:[
-  
-    ],
+// scrollBehavior(to, from, savedPosition) {
+// if (to.hash) {
+//             return {
+//                 el: to.hash,
+//                 scrollBehavior: 'smooth'
+//             }
+//         } else {
+//             return { top: 0 }
+//     }
+// }
+// });
 
-    // scrollBehavior(to, from, savedPosition) {
-    // if (to.hash) {
-    //             return {
-    //                 el: to.hash,
-    //                 scrollBehavior: 'smooth'
-    //             }
-    //         } else {
-    //             return { top: 0 }
-    //     }
-    // }
-})
-
-
-export default router
+// export default router;

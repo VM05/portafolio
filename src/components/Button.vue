@@ -1,6 +1,6 @@
 <template>
   <button
-    class="rounded-lg py-3 px-5 text-white transition font-semibold inline-block"
+    class="rounded-lg py-3 px-5 text-white transition font-semibold inline-block group"
     :class="{
       'cursor-pointer': !disabled,
       'bg-slate-500 hover:bg-slate-400 hover:cursor-not-allowed border-black-50': disabled,
@@ -10,6 +10,12 @@
     :disabled="disabled"
   >
     {{ texto }}
+
+    <font-awesome-icon
+      icon="fa-regular fa-newspaper"
+      class="group-hover:animate-bounce ml-3"
+      v-if="icono"
+    />
   </button>
 </template>
 
@@ -18,7 +24,11 @@
     texto: String,
     primario: Boolean,
     secundario: Boolean,
-    disabled: Boolean,
+    icono: Boolean,
+    disabled: {
+      type: Boolean,
+      default: false,
+    },
   });
 </script>
 

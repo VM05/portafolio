@@ -1,7 +1,7 @@
 <template>
   <footer class="overflow-hidden">
     <div
-      class="footer-wave h-[350px] w-[1900px] bg-wave-700 justify-center flex items-center text-white"
+      class="footer-wave h-[350px] m-w-[1900px] bg-wave-700 justify-center flex items-center text-white"
     >
       <h3 class="inline-block text-3xl">hola desde footer</h3>
     </div>

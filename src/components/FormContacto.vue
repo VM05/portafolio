@@ -16,6 +16,7 @@
               class="border border-slate-300"
               v-model="formContacto.nombre"
               name="user_name"
+              id="nombre"
             />
           </div>
 
@@ -26,6 +27,7 @@
               name="user_email"
               class="border border-slate-300"
               v-model="formContacto.email"
+              id="email"
             />
           </div>
 
@@ -33,7 +35,7 @@
             <label for="sugerencia">Mensaje</label>
             <textarea
               name="user_message"
-              id=""
+              id="mensaje"
               rows="5"
               class="w-full rounded-lg p-3 font-light border border-slate-300"
               placeholder="mensaje"

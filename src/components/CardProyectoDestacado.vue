@@ -8,6 +8,15 @@
       <p>
         {{ descripcion }}
       </p>
+
+      <div class="flex gap-5 mt-4 text-3xl">
+        <FontIcon
+          v-for="({ icon, name }, index) in iconosCard"
+          :key="name"
+          :icon="icon"
+          :index="index"
+        />
+      </div>
     </div>
 
     <video
@@ -22,10 +31,12 @@
 
 <script setup>
   import { onMounted } from 'vue';
+  import FontIcon from './FontIcon.vue';
   const props = defineProps({
     titulo: String,
     descripcion: String,
     link: String,
+    iconosCard: Array,
   });
 
   onMounted(() => {

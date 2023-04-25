@@ -5,16 +5,13 @@
 </template>
 
 <script setup>
-  import { ref, onMounted } from 'vue';
+  import { ref } from 'vue';
   const props = defineProps({
     icon: String,
     index: Number,
   });
 
   const intervalo = ref(props.index * 0.2 + 's');
-  onMounted(() => {
-    console.log(intervalo.value);
-  });
 </script>
 
 <style scoped>

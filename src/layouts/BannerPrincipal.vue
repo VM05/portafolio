@@ -3,7 +3,9 @@
     <div class="wave h-[90vh] w-full bg-wave-700 relative top-32">
       <WaveIcons />
     </div>
-    <div class="flex justify-between gap-5 relative -z-1 max-w-[1280px] w-full mx-auto">
+    <div
+      class="flex md:flex-row flex-col justify-between relative -z-1 max-w-[1280px] w-full mx-auto px-12"
+    >
       <div class="text-intro w-1/2 text-white font-semibold px-3">
         <h1 class="text-6xl font-bold">
           <span class="text-3xl">Hola! soy</span><br />Victor Montiel
@@ -18,11 +20,30 @@
           />
         </div>
       </div>
-      <div class="portfolio-picture relative w-1/2">
+      <div class="portfolio-picture relative max-h-[400px] max-w-[420px]">
+        <!-- <div
+          class="blob-background absolute z-0 left-0 -top-14 h-[400px] w-[400px] bg-greenblob-700 overflow-hidden"
+        >
+          <img
+            src="../assets/victor-mejorado.webp"
+            alt="victor-montiel"
+            class="animacion-victor absolute -bottom-16 left-10"
+          />
+        </div> -->
+        <!-- <div class="portfolio-picture relative">
+        <div
+          class="blob-background absolute z-0 -top-14 h-[400px] w-[400px] bg-greenblob-700"
+        ></div>
         <img
           src="../assets/victor-mejorado.webp"
           alt="victor-montiel"
-          class="ml-auto -top-20 animacion-victor"
+          class="animacion-victor absolute -top-14"
+        />
+      </div> -->
+        <img
+          src="../assets/vitoco.webp"
+          alt="victor-montiel"
+          class="animacion-victor absolute left-10 -top-10 w-full"
         />
       </div>
     </div>
@@ -44,17 +65,8 @@
     top: 4rem;
   }
 
-  .portfolio-picture::before {
-    content: '';
-    position: absolute;
-    background: url('../assets/static-blob.svg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    top: -10rem;
-    right: -8rem;
-    width: 600px;
-    height: 600px;
-    z-index: -1;
+  .blob-background {
+    border-radius: 66% 34% 62% 38% / 53% 47% 53% 47%;
   }
 
   .animacion-victor {
@@ -63,6 +75,19 @@
     opacity: 0;
     animation-delay: 1s;
   }
+
+  /* .portfolio-picture::before {
+    content: '';
+    position: absolute;
+    background: url('');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: -10rem;
+    right: -8rem;
+    width: 600px;
+    height: 600px;
+    z-index: -1;
+  } */
 
   @keyframes appear {
     from {
@@ -75,11 +100,13 @@
     }
   }
 
-  img {
-    width: 350px;
+  .animacion-victor {
+    /* width: 350px; */
     position: relative;
     z-index: 0;
     filter: drop-shadow(2px 0px 10px rgb(0 0 0 / 0.4));
+    right: 0;
+    margin: 0 !important;
   }
 
   @keyframes waves {

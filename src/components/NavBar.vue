@@ -5,20 +5,29 @@
   >
     <div class="w-[1280px] flex flex-row justify-between mx-auto dark">
       <img src="../assets/vue.svg" alt="logo marca de victor montiel" />
-      <ul class="list-none flex flex-row items-center gap-5">
+      <div class="flex items-center">
+        <ul class="list-none flex flex-row items-center gap-5">
+          <a
+            v-for="(item, index) in links"
+            :key="item.name"
+            :href="item.url"
+            class="hover:text-green-600 transition hover:font-semibold"
+            :class="
+              { 'text-green-600 font-semibold': activeMenuItem == item.id },
+              index === 0 ? 'min-w-[60px]' : 'min-w-[80px]'
+            "
+          >
+            {{ item.name }}
+          </a>
+        </ul>
         <a
-          v-for="(item, index) in links"
-          :key="item.name"
-          :href="item.url"
-          class="hover:text-green-600 transition hover:font-semibold"
-          :class="
-            { 'text-green-600 font-semibold': activeMenuItem == item.id },
-            index === 0 ? 'min-w-[60px]' : 'min-w-[80px]'
-          "
+          href="https://drive.google.com/file/d/1ifC1BKCF4r4c0vqU6s-Uk8GSJScaYgSf/view"
+          rel="noopener noreferrer"
+          target="_blank"
         >
-          {{ item.name }}
+          <Button secundario texto="Curriculum " class="text-white" icono />
         </a>
-      </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -26,6 +35,7 @@
 <script setup>
   import { onMounted, ref } from 'vue';
   import { links } from '../helpers/constants';
+  import Button from './Button.vue';
 
   const scrollPosition = ref(0);
   const initialPos = ref();

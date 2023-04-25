@@ -1,7 +1,7 @@
 import { createApp } from 'vue';
 import './style.css';
 import App from './App.vue';
-import router from './router/router';
+// import router from './router/router';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import {
   faBootstrap,
@@ -22,7 +22,7 @@ import {
   faWordpressSimple,
 } from '@fortawesome/free-brands-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faFileLines } from '@fortawesome/free-regular-svg-icons';
+import { faFileLines, faNewspaper } from '@fortawesome/free-regular-svg-icons';
 import {
   faCode,
   faCodeBranch,
@@ -60,7 +60,9 @@ library.add(
   faCodeFork,
   faCodeMerge,
   faCodeCommit,
-  faTerminal
+  faTerminal,
+  faJs,
+  faNewspaper
 );
 
-createApp(App).component('font-awesome-icon', FontAwesomeIcon).use(router).mount('#app');
+createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app');
