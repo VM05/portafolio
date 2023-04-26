@@ -23,26 +23,32 @@ export const icons = [
 
 export const videoItems = [
   {
-    titulo: 'Proyectoaa',
+    titulo: 'Autocred',
     descripcion:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi recusandae suscipit nisi similique. Repellat dolores suscipit, ab fugit deleniti quis eius fuga fugiat accusamus possimus? Quis alias neque error voluptas.',
-    link: '/video/clack.mp4',
+    link: '/video/autocred.mp4',
   },
   {
-    titulo: 'Proyectoccccccccc',
+    titulo: 'Mirs Robotics',
     descripcion:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi recusandae suscipit nisi similique. Repellat dolores suscipit, ab fugit deleniti quis eius fuga fugiat accusamus possimus? Quis alias neque error voluptas.',
-    link: '/video/clack.mp4',
+    link: '/video/mirs.mp4',
   },
   {
-    titulo: 'Proyectoaaaaaaa',
+    titulo: 'Clack TV',
     descripcion:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi recusandae suscipit nisi similique. Repellat dolores suscipit, ab fugit deleniti quis eius fuga fugiat accusamus possimus? Quis alias neque error voluptas.',
     link: '/video/clack.mp4',
     iconos: [
-      { icon: 'fa-brands fa-linkedin', name: 'linkedin' },
-      { icon: 'fa-brands fa-github', name: 'github' },
-      { icon: 'fa-brands fa-whatsapp', name: 'whatsapp' },
+      { icon: 'bootstrap', name: 'bootstrap' },
+      { icon: 'css', name: 'css' },
+      { icon: 'html', name: 'html' },
+      { icon: 'js', name: 'js' },
+      { icon: 'pinia', name: 'pinia' },
+      { icon: 'sass', name: 'sass' },
+      { icon: 'vue', name: 'vue', tipo: 'svg' },
+      { icon: 'vite', name: 'vite', tipo: 'svg' },
+      { icon: 'tailwind', name: 'tailwind', tipo: 'webp' },
     ],
   },
 ];

@@ -13,7 +13,7 @@
 
     <font-awesome-icon
       icon="fa-regular fa-newspaper"
-      class="group-hover:animate-bounce ml-3"
+      class="group-hover:animate-bounce ml-3 text-xl"
       v-if="icono"
     />
   </button>

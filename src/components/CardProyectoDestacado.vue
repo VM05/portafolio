@@ -9,12 +9,14 @@
         {{ descripcion }}
       </p>
 
-      <div class="flex gap-5 mt-4 text-3xl">
-        <FontIcon
-          v-for="({ icon, name }, index) in iconosCard"
+      <div class="flex gap-3 mt-4 items-center flex-wrap">
+        <TechIcon
+          v-for="{ icon, name, tipo } in iconosCard"
           :key="name"
           :icon="icon"
-          :index="index"
+          :name="name"
+          class="object-cover h-8"
+          :tipo="tipo"
         />
       </div>
     </div>
@@ -23,7 +25,7 @@
       :src="link"
       height="400"
       width="800"
-      class="rounded-2xl grayscale group-hover:grayscale-0 z-0 transition"
+      class="rounded-2xl grayscale group-hover:grayscale-0 z-0 transition contenedor-texto"
       muted
     ></video>
   </div>
@@ -31,7 +33,7 @@
 
 <script setup>
   import { onMounted } from 'vue';
-  import FontIcon from './FontIcon.vue';
+  import TechIcon from './TechIcon.vue';
   const props = defineProps({
     titulo: String,
     descripcion: String,

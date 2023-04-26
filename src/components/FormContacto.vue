@@ -43,11 +43,18 @@
             ></textarea>
           </div>
           <Button
+            v-if="!isLoading && !complete"
             texto="Enviar"
             secundario
             :disabled="error"
             class="max-w-[150px] w-full mx-auto"
           />
+          <Loading v-else-if="isLoading && !complete" />
+
+          <p v-if="!isLoading && complete" class="w-2/3 text-center mx-auto text-wave-700">
+            Muchas gracias por comunicarte conmigo! <br />
+            te respondere lo mas pronto posible
+          </p>
         </form>
       </div>
     </div>
@@ -58,6 +65,7 @@
   import { ref, reactive, watch } from 'vue';
   import { validateEmail, isFormEmpty } from '../helpers/validaciones';
   import emailjs from '@emailjs/browser';
+  import Loading from './Loading.vue';
 
   const formContacto = reactive({
     nombre: '',
@@ -65,12 +73,10 @@
     mensaje: '',
   });
   const error = ref(true);
+  const isLoading = ref(false);
+  const complete = ref(false);
 
   watch(formContacto, () => {
-    console.log(validateEmail(formContacto.email));
-
-    console.log(isFormEmpty(formContacto));
-
     if (validateEmail(formContacto.email) && !isFormEmpty(formContacto)) {
       error.value = false;
     } else {
@@ -79,11 +85,23 @@
   });
 
   const enviarMail = async () => {
+    isLoading.value = true;
     const formulario = document.getElementById('form_contacto');
-    console.log(
-      emailjs.sendForm('service_nxintto', 'template_bg9hxen', formulario, 'u3dYQ9aE_YOEkW79M')
+
+    const { status } = await emailjs.sendForm(
+      'service_nxintto',
+      'template_bg9hxen',
+      formulario,
+      'u3dYQ9aE_YOEkW79M'
     );
-    await emailjs.sendForm('service_nxintto', 'template_bg9hxen', formulario, 'u3dYQ9aE_YOEkW79M');
+
+    if (status == 200) {
+      complete.value = true;
+      formContacto.nombre = '';
+      formContacto.email = '';
+      formContacto.mensaje = '';
+    }
+    isLoading.value = false;
   };
 </script>
 
