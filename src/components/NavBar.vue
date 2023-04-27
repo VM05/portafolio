@@ -1,11 +1,11 @@
 <template>
   <div
-    class="shadow-md bg-white p-5 w-full transition-all fixed z-50"
-    :class="verdadero ? '-top-24' : 'top-0'"
+    class="shadow-md bg-white px-5 py-4 md:p-5 w-full transition-all fixed z-50"
+    :class="verdadero ? '-top-32' : 'top-0'"
   >
-    <div class="w-[1280px] flex flex-row justify-between mx-auto dark">
+    <div class="max-w-[1280px] flex flex-row justify-between mx-auto">
       <img src="../assets/vue.svg" alt="logo marca de victor montiel" />
-      <div class="flex items-center">
+      <div class="flex items-center" v-if="!isMobile">
         <ul class="list-none flex flex-row items-center gap-5">
           <a
             v-for="(item, index) in links"
@@ -13,8 +13,8 @@
             :href="item.url"
             class="hover:text-green-600 transition hover:font-semibold"
             :class="
-              { 'text-green-600 font-semibold': activeMenuItem == item.id },
-              index === 0 ? 'min-w-[60px]' : 'min-w-[80px]'
+              ({ 'text-green-600 font-semibold': activeMenuItem == item.id },
+              index === 0 ? 'min-w-[60px]' : 'min-w-[80px]')
             "
           >
             {{ item.name }}
@@ -41,6 +41,7 @@
   const initialPos = ref();
   const verdadero = ref();
   const activeMenuItem = ref('inicio');
+  const isMobile = ref(false);
 
   const scrollHandler = () => {
     const sections = document.querySelectorAll('section');
@@ -77,6 +78,10 @@
   // };
 
   onMounted(() => {
+    window.addEventListener('resize', () => {
+      window.innerWidth < 600 ? (isMobile.value = true) : (isMobile.value = false);
+    });
+
     window.addEventListener('scroll', () => {
       initialPos.value = window.pageYOffset;
       setTimeout(() => {

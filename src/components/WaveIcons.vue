@@ -124,4 +124,10 @@
       filter: drop-shadow(0px 0px 0px rgb(0 0 0 / 0));
     }
   }
+
+  @media (max-width: 500px) {
+    .wave-icon {
+      font-size: 40px;
+    }
+  }
 </style>

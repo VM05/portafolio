@@ -5,6 +5,7 @@
   <ContainerView>
     <SobreMi />
     <MisProyectos :data="videoItems" />
+    <TecnologiasUtilizadas />
     <FormContacto />
   </ContainerView>
   <Footer />
@@ -19,6 +20,7 @@
   import FormContacto from './components/FormContacto.vue';
   import Footer from './components/Footer.vue';
   import SobreMi from './layouts/SobreMi.vue';
+  import TecnologiasUtilizadas from './layouts/TecnologiasUtilizadas.vue';
 </script>
 
 <style scoped></style>

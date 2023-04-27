@@ -4,14 +4,18 @@
       <WaveIcons />
     </div>
     <div
-      class="flex md:flex-row flex-col justify-between relative -z-1 max-w-[1280px] w-full mx-auto px-12"
+      class="flex md:flex-row flex-col-reverse md:justify-between relative -top-10 -z-1 max-w-[1280px] w-full mx-auto px-5 md:px-12"
     >
-      <div class="text-intro w-1/2 text-white font-semibold px-3">
-        <h1 class="text-6xl font-bold">
-          <span class="text-3xl">Hola! soy</span><br />Victor Montiel
+      <div
+        class="text-intro w-full md:w-1/2 text-white font-semibold md:px-3 text-center md:text-left"
+      >
+        <h1 class="text-4xl md:text-6xl font-bold">
+          <span class="md:text-3xl">Hola! soy</span><br />Victor Montiel
         </h1>
-        <h2 class="text-4xl mt-2">Front-End Developer</h2>
-        <div class="icons mt-5 flex justify-between max-w-[300px] text-5xl">
+        <h2 class="md:text-4xl mt-2">Front-End Developer</h2>
+        <div
+          class="icons mt-5 flex justify-around md:justify-between max-w-[300px] md:text-5xl text-2xl mx-auto md:mx-0"
+        >
           <FontIcon
             v-for="({ icon, name }, index) in icons"
             :key="name"
@@ -20,7 +24,9 @@
           />
         </div>
       </div>
-      <div class="portfolio-picture relative max-h-[400px] max-w-[420px]">
+      <div
+        class="portfolio-picture relative max-h-[300px] md:max-h-[400px] max-w-[320px] md:max-w-[420px] flex items-center justify-center mx-auto"
+      >
         <!-- <div
           class="blob-background absolute z-0 left-0 -top-14 h-[400px] w-[400px] bg-greenblob-700 overflow-hidden"
         >
@@ -43,7 +49,7 @@
         <img
           src="../assets/vitoco.webp"
           alt="victor-montiel"
-          class="animacion-victor absolute left-10 -top-10 w-full"
+          class="animacion-victor md:absolute md:left-10 md:-top-10 w-full"
         />
       </div>
     </div>

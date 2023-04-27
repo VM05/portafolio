@@ -22,7 +22,7 @@ import {
   faWordpressSimple,
 } from '@fortawesome/free-brands-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faFileLines, faNewspaper } from '@fortawesome/free-regular-svg-icons';
+import { faEye, faFileLines, faNewspaper } from '@fortawesome/free-regular-svg-icons';
 import {
   faCode,
   faCodeBranch,
@@ -62,7 +62,8 @@ library.add(
   faCodeCommit,
   faTerminal,
   faJs,
-  faNewspaper
+  faNewspaper,
+  faEye
 );
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app');
