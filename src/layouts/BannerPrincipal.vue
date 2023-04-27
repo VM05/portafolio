@@ -47,7 +47,7 @@
         />
       </div> -->
         <img
-          src="../assets/vitoco.webp"
+          src="../assets/Vitoco.webp"
           alt="victor-montiel"
           class="animacion-victor md:absolute md:left-10 md:-top-10 w-full"
         />
