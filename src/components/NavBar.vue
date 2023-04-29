@@ -5,28 +5,35 @@
   >
     <div class="max-w-[1280px] flex flex-row justify-between mx-auto">
       <img src="../assets/vue.svg" alt="logo marca de victor montiel" />
-      <div class="flex items-center" v-if="!isMobile">
-        <ul class="list-none flex flex-row items-center gap-5">
-          <a
-            v-for="(item, index) in links"
-            :key="item.name"
-            :href="item.url"
-            class="hover:text-green-600 transition hover:font-semibold"
-            :class="
-              ({ 'text-green-600 font-semibold': activeMenuItem == item.id },
-              index === 0 ? 'min-w-[60px]' : 'min-w-[80px]')
-            "
+      <div class="flex items-center">
+        <div class="flex items-center">
+          <ul
+            class="list-none flex flex-col absolute md:relative bg-white w-full md:h-full left-0 overflow-hidden transition top-16 md:top-0 md:flex-row items-center gap-5"
+            :class="isOpen && isMobile ? 'max-h-[1000px] h-auto pb-10' : 'h-0  pb-0'"
           >
-            {{ item.name }}
-          </a>
-        </ul>
-        <a
-          href="https://drive.google.com/file/d/1ifC1BKCF4r4c0vqU6s-Uk8GSJScaYgSf/view"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <Button secundario texto="Curriculum " class="text-white" icono />
-        </a>
+            <a
+              v-for="(item, index) in links"
+              :key="item.name"
+              :href="item.url"
+              class="hover:text-green-600 transition hover:font-semibold"
+              :class="
+                ({ 'text-green-600 font-semibold': activeMenuItem == item.id },
+                index === 0 ? 'min-w-[60px]' : 'min-w-[80px]')
+              "
+            >
+              {{ item.name }}
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1ifC1BKCF4r4c0vqU6s-Uk8GSJScaYgSf/view"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <Button secundario texto="Curriculum " class="text-white" icono />
+            </a>
+          </ul>
+        </div>
+
+        <BurgerIcon @click-toggle="prueba" :cambiar="isOpen" v-if="isMobile" />
       </div>
     </div>
   </div>
@@ -36,12 +43,19 @@
   import { onMounted, ref } from 'vue';
   import { links } from '../helpers/constants';
   import Button from './Button.vue';
+  import BurgerIcon from './BurgerIcon.vue';
 
   const scrollPosition = ref(0);
   const initialPos = ref();
   const verdadero = ref();
   const activeMenuItem = ref('inicio');
-  const isMobile = ref(false);
+  const isMobile = ref(true);
+  const isOpen = ref(false);
+
+  const prueba = () => {
+    isOpen.value = !isOpen.value;
+    console.log(isOpen.value);
+  };
 
   const scrollHandler = () => {
     const sections = document.querySelectorAll('section');
@@ -78,6 +92,7 @@
   // };
 
   onMounted(() => {
+    window.innerWidth < 600 ? (isMobile.value = true) : (isMobile.value = false);
     window.addEventListener('resize', () => {
       window.innerWidth < 600 ? (isMobile.value = true) : (isMobile.value = false);
     });
@@ -90,7 +105,8 @@
 
       initialPos.value < scrollPosition.value
         ? (verdadero.value = false)
-        : (verdadero.value = true);
+        : (verdadero.value = true),
+        (isOpen.value = false);
 
       scrollHandler();
     });
