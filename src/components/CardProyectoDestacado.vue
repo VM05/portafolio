@@ -35,6 +35,7 @@
       :src="link"
       class="rounded-t-2xl md:rounded-2xl z-0 grayscale transition max-w-[800px] w-full h-auto contenedor-texto"
       muted
+      playsinline
     ></video>
   </div>
 </template>

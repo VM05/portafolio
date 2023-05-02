@@ -4,87 +4,67 @@
     <font-awesome-icon icon="fa-brands fa-square-js" class="absolute top-20 left-[52%] wave-icon" />
     <font-awesome-icon icon="fa-brands fa-node-js" class="absolute top-10 left-20 wave-icon" />
     <font-awesome-icon icon="fa-brands fa-github" class="absolute top-20 left-[33%] wave-icon" />
-
     <font-awesome-icon icon="fa-brands fa-php" class="absolute top-[43%] left-[10%] wave-icon" />
-
     <font-awesome-icon icon="fa-brands fa-sass" class="absolute top-[35%] right-0 wave-icon" />
     <font-awesome-icon icon="fa-brands fa-sass" class="absolute top-[35%] right-[52%] wave-icon" />
-
     <font-awesome-icon
       icon="fa-brands fa-wordpress-simple"
       class="absolute bottom-20 right-44 wave-icon"
     />
-
     <font-awesome-icon
       icon="fa-brands fa-bootstrap"
       class="absolute top-32 right-[35%] wave-icon"
     />
-
     <font-awesome-icon
       icon="fa-brands fa-bootstrap"
       class="absolute bottom-32 left-[25%] wave-icon"
     />
-
     <img
       src="../assets/tailwind-css-icon.svg"
       alt=""
       class="h-10 absolute bottom-32 left-[38%] wave-icon"
     />
-
     <img
       src="../assets/tailwind-css-icon.svg"
       alt=""
       class="h-10 absolute top-[40%] left-[48%] wave-icon"
     />
-
     <font-awesome-icon
       icon="fa-solid fa-code-compare"
       class="h-10 absolute top-[40%] right-[40%] wave-icon"
     />
-
     <font-awesome-icon
       icon="fa-brands fa-css3-alt"
       class="absolute bottom-20 right-[38%] wave-icon"
     />
-
     <font-awesome-icon icon="fa-brands fa-html5" class="absolute top-10 right-[18%] wave-icon" />
-
     <font-awesome-icon
       icon="fa-brands fa-css3"
       class="absolute bottom-[24%] right-[52%] wave-icon"
     />
-
     <font-awesome-icon icon="fa-solid fa-code" class="absolute top-10 right-[52%] wave-icon" />
-
     <font-awesome-icon
       icon="fa-solid fa-laptop-code"
       class="absolute top-28 left-[17%] wave-icon"
     />
-
     <font-awesome-icon
       icon="fa-solid fa-code-branch"
       class="absolute bottom-20 left-[18%] wave-icon"
     />
-
     <font-awesome-icon
       icon="fa-solid fa-code-branch"
       class="absolute top-10 right-[18%] wave-icon"
     />
-
     <font-awesome-icon
       icon="fa-solid fa-code-merge"
       class="absolute bottom-20 left-[58%] wave-icon"
     />
-
     <font-awesome-icon icon="fa-brands fa-vuejs" class="absolute top-10 right-[5%] wave-icon" />
-
     <font-awesome-icon
       icon="fa-brands fa-vuejs"
       class="absolute bottom-[30%] right-[5%] wave-icon"
     />
-
     <font-awesome-icon icon="fa-brands fa-vuejs" class="absolute bottom-32 left-[8%] wave-icon" />
-
     <font-awesome-icon
       icon="fa-solid fa-terminal"
       class="absolute bottom-10 right-[22%] wave-icon"

@@ -1,7 +1,7 @@
 <template>
   <div
     class="shadow-md bg-white px-5 py-4 md:p-5 w-full transition-all fixed z-50"
-    :class="verdadero ? '-top-32' : 'top-0'"
+    :class="activeMenu ? '-top-32' : 'top-0'"
   >
     <div class="max-w-[1280px] flex flex-row justify-between mx-auto">
       <img src="../assets/vue.svg" alt="logo marca de victor montiel" />
@@ -15,10 +15,10 @@
               v-for="(item, index) in links"
               :key="item.name"
               :href="item.url"
-              class="hover:text-green-600 transition hover:font-semibold"
+              class="hover:text-green-600 transition hover:font-semibold text-center"
               :class="
-                ({ 'text-green-600 font-semibold': activeMenuItem == item.id },
-                index === 0 ? 'min-w-[60px]' : 'min-w-[80px]')
+                { 'text-green-600 font-semibold': activeMenuItem == item.id },
+                index === 0 ? 'min-w-[60px]' : 'min-w-[80px]'
               "
             >
               {{ item.name }}
@@ -47,7 +47,7 @@
 
   const scrollPosition = ref(0);
   const initialPos = ref();
-  const verdadero = ref();
+  const activeMenu = ref();
   const activeMenuItem = ref('inicio');
   const isMobile = ref(true);
   const isOpen = ref(false);
@@ -99,13 +99,21 @@
 
     window.addEventListener('scroll', () => {
       initialPos.value = window.pageYOffset;
+
+      if (initialPos.value <= 100) {
+        activeMenu.value = false;
+        return;
+      }
       setTimeout(() => {
         scrollPosition.value = scrollY;
-      }, 100);
+      }, 500);
+
+      console.log(initialPos.value);
+      console.log(scrollPosition.value);
 
       initialPos.value < scrollPosition.value
-        ? (verdadero.value = false)
-        : (verdadero.value = true),
+        ? (activeMenu.value = false)
+        : (activeMenu.value = true),
         (isOpen.value = false);
 
       scrollHandler();
