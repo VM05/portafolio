@@ -16,7 +16,7 @@
       </p>
 
       <div class="flex mt-4 flex-col flex-wrap">
-        <h4 class="font-semibold">Tecnologias Utilizadas</h4>
+        <h4 class="font-semibold">Tecnologías Utilizadas</h4>
         <div class="flex mt-4 items-center flex-wrap gap-3">
           <TechIcon
             v-for="{ icon, name, tipo } in iconosCard"

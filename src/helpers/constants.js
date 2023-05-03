@@ -24,7 +24,7 @@ export const videoItems = [
   {
     titulo: 'Autocred',
     descripcion:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi recusandae suscipit nisi similique. Repellat dolores suscipit, ab fugit deleniti quis eius fuga fugiat accusamus possimus? Quis alias neque error voluptas.',
+      'Autocred.cl es un proyecto realizado para la startup Chilena Autocred Spa, en el cual tuve una participación colaborativa; realizando nuevas secciones del sitio web para la actualización de la información de la misma.',
     link: '/video/autocred.mp4',
     iconos: [
       // { icon: 'bootstrap', name: 'bootstrap' },
@@ -41,7 +41,7 @@ export const videoItems = [
   {
     titulo: 'Mirs Robotics',
     descripcion:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi recusandae suscipit nisi similique. Repellat dolores suscipit, ab fugit deleniti quis eius fuga fugiat accusamus possimus? Quis alias neque error voluptas.',
+      'mirsrobotics.com fue un proyecto realizado para la empresa MIRS, en ella logré realizar una actualización completa de su sitio web en base al diseño facilitado.',
     link: '/video/mirs.mp4',
     iconos: [
       // { icon: 'bootstrap', name: 'bootstrap' },
@@ -58,7 +58,7 @@ export const videoItems = [
   {
     titulo: 'Clack TV',
     descripcion:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi recusandae suscipit nisi similique. Repellat dolores suscipit, ab fugit deleniti quis eius fuga fugiat accusamus possimus? Quis alias neque error voluptas.',
+      'clacktv.cl fue un proyecto realizado para la empresa VTR, su finalidad fue dar a conocer la programación de los canales de entretenimiento, mostrando así tráilers, horarios de programas y los estrenos próximos en diversos canales.',
     link: '/video/clack.mp4',
     iconos: [
       { icon: 'html', name: 'html' },

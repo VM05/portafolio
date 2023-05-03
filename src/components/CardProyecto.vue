@@ -4,7 +4,7 @@
   >
     <img src="../assets/ryq.webp" alt="ryq" class="h-[200px] w-full object-cover" />
 
-    <div class="p-3">
+    <div class="p-3 h-full flex flex-col flex-grow">
       <div class="flex justify-between items-center">
         <h4 class="text-2xl self-start font-semibold">{{ titulo }}</h4>
         <FontIcon
@@ -15,10 +15,10 @@
       <p class="my-5">
         {{ descripcion }}
       </p>
-      <div class="flex mt-4 flex-col flex-wrap">
-        <h4 class="font-semibold">Tecnologias Utilizadas</h4>
+      <div class="flex flex-col mt-auto">
+        <h4 class="font-semibold">Tecnologías Utilizadas</h4>
 
-        <div class="flex mt-4 items-center flex-wrap gap-3">
+        <div class="flex items-center flex-wrap gap-3 my-2">
           <TechIcon
             v-for="{ icon, name, tipo } in iconosCard"
             :key="name"
