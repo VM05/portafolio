@@ -1,14 +1,28 @@
 <template>
   <footer class="overflow-hidden">
-    <div
-      class="footer-wave h-[350px] m-w-[1900px] bg-wave-700 justify-center flex items-center text-white"
-    >
-      <h3 class="inline-block text-3xl">hola desde footer</h3>
+    <div class="footer-wave h-[250px] m-w-[1900px] bg-wave-700 relative -bottom-3 flex text-white">
+      <div
+        class="flex flex-col md:flex-row max-w-[1280px] w-full md:px-12 md:justify-between justify-center items-center md:items-end mx-auto gap-5 md:pb-10 text-lg"
+      >
+        <h3>Victor Montiel</h3>
+        <div class="flex gap-5 text-2xl">
+          <FontIcon
+            v-for="({ icon, name, link }, index) in icons"
+            :key="name"
+            :icon="icon"
+            :index="index"
+            :link="link"
+          />
+        </div>
+      </div>
     </div>
   </footer>
 </template>
 
-<script setup></script>
+<script setup>
+  import { icons } from '../helpers/constants';
+  import FontIcon from './FontIcon.vue';
+</script>
 
 <style scoped>
   .footer-wave {

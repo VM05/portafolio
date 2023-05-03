@@ -1,6 +1,6 @@
 <template>
   <section id="proyectos">
-    <div class="py-10 flex flex-col relative">
+    <div class="pb-10 flex flex-col relative">
       <h2 class="text-wave-700 font-semibold text-center text-4xl my-10">Proyectos Destacados</h2>
       <CardProyectoDestacado
         v-for="{ titulo, link, descripcion, iconos } in data"
@@ -11,7 +11,7 @@
         :iconosCard="iconos"
       />
     </div>
-    <div>
+    <div class="mb-32">
       <h2 class="text-wave-700 font-semibold text-center text-4xl my-10">Otros Proyectos</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
         <CardProyecto

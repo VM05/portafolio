@@ -1,5 +1,5 @@
 <template>
-  <a href="" class="hover:opacity-80 hover:scale-105 transition" target="_blank">
+  <a :href="link" class="hover:opacity-80 hover:scale-105 transition" target="_blank">
     <font-awesome-icon :icon="icon" class="transition" />
   </a>
 </template>
@@ -9,6 +9,7 @@
   const props = defineProps({
     icon: String,
     index: Number,
+    link: String,
   });
 
   const intervalo = ref(props.index * 0.2 + 's');

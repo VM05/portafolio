@@ -18,7 +18,7 @@
   import ContainerView from './components/ContainerView.vue';
   import { videoItems } from './helpers/constants';
   import FormContacto from './components/FormContacto.vue';
-  import Footer from './components/Footer.vue';
+  import Footer from './components/FooterView.vue';
   import SobreMi from './layouts/SobreMi.vue';
   import TecnologiasUtilizadas from './layouts/TecnologiasUtilizadas.vue';
 </script>

@@ -17,8 +17,8 @@
               :href="item.url"
               class="hover:text-green-600 transition hover:font-semibold text-center"
               :class="
-                ({ 'text-green-600 font-semibold': activeMenuItem == item.id },
-                index === 0 ? 'min-w-[60px]' : 'min-w-[80px]')
+                { 'text-green-600 font-semibold': activeMenuItem == item.id },
+                index === 0 ? 'min-w-[60px]' : 'min-w-[80px]'
               "
             >
               {{ item.name }}

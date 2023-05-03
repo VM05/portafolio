@@ -1,6 +1,6 @@
 <template>
   <section id="inicio" class="h-[100vh] flex items-center relative">
-    <div class="wave h-[90vh] w-full bg-wave-700 relative top-32">
+    <div class="wave h-[90vh] w-full bg-wave-700 relative top-32 overflow-hidden">
       <WaveIcons />
     </div>
     <div
@@ -17,10 +17,11 @@
           class="icons mt-5 flex justify-around md:justify-between max-w-[300px] md:text-5xl text-2xl mx-auto md:mx-0"
         >
           <FontIcon
-            v-for="({ icon, name }, index) in icons"
+            v-for="({ icon, name, link }, index) in icons"
             :key="name"
             :icon="icon"
             :index="index"
+            :link="link"
           />
         </div>
       </div>
@@ -80,6 +81,12 @@
     animation: appear 1s forwards;
     opacity: 0;
     animation-delay: 1s;
+  }
+
+  @media (max-width: 768px) {
+    .animacion-victor {
+      transform: translateX(20px);
+    }
   }
 
   /* .portfolio-picture::before {

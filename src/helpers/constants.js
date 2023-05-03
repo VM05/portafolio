@@ -9,14 +9,17 @@ export const icons = [
   {
     icon: 'fa-brands fa-linkedin',
     name: 'linkedin',
+    link: 'https://www.linkedin.com/in/victor-montiel-227564124/',
   },
   {
     icon: 'fa-brands fa-github',
     name: 'github',
+    link: 'https://github.com/VM05',
   },
   {
     icon: 'fa-brands fa-whatsapp',
     name: 'whatsapp',
+    link: 'https://api.whatsapp.com/send?phone=56972698316',
   },
 ];
 
