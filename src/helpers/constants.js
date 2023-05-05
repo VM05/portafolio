@@ -28,7 +28,7 @@ export const videoItems = [
     titulo: 'Autocred',
     descripcion:
       'Autocred.cl es un proyecto realizado para la startup Chilena Autocred Spa, en el cual tuve una participación colaborativa; realizando nuevas secciones del sitio web para la actualización de la información de la misma.',
-    link: '/video/autocred.mp4',
+    video: '/video/autocred.mp4',
     iconos: [
       // { icon: 'bootstrap', name: 'bootstrap' },
       { icon: 'html', name: 'html' },
@@ -40,12 +40,13 @@ export const videoItems = [
       { icon: 'pinia', name: 'pinia' },
       { icon: 'vite', name: 'vite', tipo: 'svg' },
     ],
+    link: '',
   },
   {
     titulo: 'Mirs Robotics',
     descripcion:
       'mirsrobotics.com fue un proyecto realizado para la empresa MIRS, en ella logré realizar una actualización completa de su sitio web en base al diseño facilitado.',
-    link: '/video/mirs.mp4',
+    video: '/video/mirs.mp4',
     iconos: [
       // { icon: 'bootstrap', name: 'bootstrap' },
       { icon: 'html', name: 'html' },
@@ -57,12 +58,13 @@ export const videoItems = [
       // { icon: 'vite', name: 'vite', tipo: 'svg' },
       // { icon: 'tailwind', name: 'tailwind', tipo: 'webp' },
     ],
+    link: '',
   },
   {
     titulo: 'Clack TV',
     descripcion:
       'clacktv.cl fue un proyecto realizado para la empresa VTR, su finalidad fue dar a conocer la programación de los canales de entretenimiento, mostrando así tráilers, horarios de programas y los estrenos próximos en diversos canales.',
-    link: '/video/clack.mp4',
+    video: '/video/clack.mp4',
     iconos: [
       { icon: 'html', name: 'html' },
       { icon: 'css', name: 'css' },
@@ -74,6 +76,7 @@ export const videoItems = [
       // { icon: 'vite', name: 'vite', tipo: 'svg' },
       // { icon: 'tailwind', name: 'tailwind', tipo: 'webp' },
     ],
+    link: '',
   },
 ];
 

@@ -32,7 +32,7 @@
     </div>
 
     <video
-      :src="link"
+      :src="video"
       class="rounded-t-2xl md:rounded-2xl z-0 grayscale transition max-w-[800px] w-full h-auto contenedor-texto"
       muted
       playsinline
@@ -46,7 +46,7 @@
   const props = defineProps({
     titulo: String,
     descripcion: String,
-    link: String,
+    video: String,
     iconosCard: Array,
   });
 

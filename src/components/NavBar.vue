@@ -4,7 +4,11 @@
     :class="activeMenu ? '-top-32' : 'top-0'"
   >
     <div class="max-w-[1280px] flex flex-row justify-between mx-auto">
-      <img src="../assets/vue.svg" alt="logo marca de victor montiel" />
+      <img
+        src="../assets/victor_logo2.webp"
+        alt="logo marca de victor montiel"
+        class="h-10 md:h-16 w-auto"
+      />
       <div class="flex items-center">
         <div class="flex items-center">
           <ul
