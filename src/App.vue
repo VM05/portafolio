@@ -4,7 +4,7 @@
   <BannerPrincipal />
   <ContainerView>
     <SobreMi />
-    <MisProyectos :data="videoItems" />
+    <MisProyectos />
     <TecnologiasUtilizadas />
     <FormContacto />
   </ContainerView>
@@ -16,7 +16,6 @@
   import BannerPrincipal from './layouts/BannerPrincipal.vue';
   import MisProyectos from './layouts/MisProyectos.vue';
   import ContainerView from './components/ContainerView.vue';
-  import { videoItems } from './helpers/constants';
   import FormContacto from './components/FormContacto.vue';
   import Footer from './components/FooterView.vue';
   import SobreMi from './layouts/SobreMi.vue';

@@ -2,15 +2,17 @@
   <div
     class="border flex flex-col gap-3 rounded-lg overflow-hidden items-center border-slate-200 hover:-translate-y-1 transition text-wave-700 shadow-lg"
   >
-    <img src="../assets/ryq.webp" alt="ryq" class="h-[200px] w-full object-cover" />
+    <img :src="foto" alt="ryq" class="h-[200px] w-full object-cover" />
 
     <div class="p-3 h-full flex flex-col flex-grow">
       <div class="flex justify-between items-center">
         <h4 class="text-2xl self-start font-semibold">{{ titulo }}</h4>
-        <FontIcon
-          icon="fa-regular fa-eye"
-          class="bg-wave-700 p-2 rounded-full w-10 text-center text-white"
-        />
+        <a :href="link" v-if="link" target="_blank">
+          <FontIcon
+            icon="fa-regular fa-eye"
+            class="bg-wave-700 p-2 rounded-full w-10 text-center text-white"
+          />
+        </a>
       </div>
       <p class="my-5">
         {{ descripcion }}
@@ -42,6 +44,7 @@
     descripcion: String,
     link: String,
     iconosCard: Array,
+    foto: String,
   });
 </script>
 

@@ -40,7 +40,7 @@ export const videoItems = [
       { icon: 'pinia', name: 'pinia' },
       { icon: 'vite', name: 'vite', tipo: 'svg' },
     ],
-    link: '',
+    link: 'https://proyecto-auto.netlify.app',
   },
   {
     titulo: 'Mirs Robotics',
@@ -91,4 +91,25 @@ export const tecnologias = [
   { icon: 'bootstrap', name: 'bootstrap' },
   { icon: 'tailwind', name: 'tailwind', tipo: 'webp' },
   { icon: 'git', name: 'git', tipo: 'svg' },
+];
+
+export const dataProyectos = [
+  {
+    titulo: 'R&Q Ingeniería',
+    descripcion:
+      'Autocred.cl es un proyecto realizado para la startup Chilena Autocred Spa, en el cual tuve una participación colaborativa; realizando nuevas secciones del sitio web para la actualización de la información de la misma.',
+    foto: '/proyect-pictures/ryq.webp',
+    iconos: [
+      // { icon: 'bootstrap', name: 'bootstrap' },
+      { icon: 'html', name: 'html' },
+      { icon: 'css', name: 'css' },
+      { icon: 'js', name: 'js' },
+      // { icon: 'sass', name: 'sass' },
+      { icon: 'tailwind', name: 'tailwind', tipo: 'webp' },
+      { icon: 'vue', name: 'vue', tipo: 'svg' },
+      { icon: 'pinia', name: 'pinia' },
+      { icon: 'vite', name: 'vite', tipo: 'svg' },
+    ],
+    link: '',
+  },
 ];
