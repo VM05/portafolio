@@ -76,7 +76,7 @@ export const videoItems = [
       // { icon: 'vite', name: 'vite', tipo: 'svg' },
       // { icon: 'tailwind', name: 'tailwind', tipo: 'webp' },
     ],
-    link: 'https://vtr-clack.netlify-app',
+    link: 'https://vtr-clack.netlify.app',
   },
 ];
 
@@ -97,7 +97,7 @@ export const dataProyectos = [
   {
     titulo: 'R&Q Ingeniería',
     descripcion:
-      'Autocred.cl es un proyecto realizado para la startup Chilena Autocred Spa, en el cual tuve una participación colaborativa; realizando nuevas secciones del sitio web para la actualización de la información de la misma.',
+      'El proyecto de R&Q ingenieria fue un sistema de creacion de perfiles para poder mantener información sobre personas postulantes a distintos puestos ofrecidos por la compañia',
     foto: '/proyect-pictures/ryq.webp',
     iconos: [
       // { icon: 'bootstrap', name: 'bootstrap' },
@@ -110,6 +110,6 @@ export const dataProyectos = [
       { icon: 'pinia', name: 'pinia' },
       { icon: 'vite', name: 'vite', tipo: 'svg' },
     ],
-    link: '',
+    link: 'https://ryqform.netlify.app/',
   },
 ];
