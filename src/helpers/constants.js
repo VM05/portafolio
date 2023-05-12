@@ -58,7 +58,7 @@ export const videoItems = [
       // { icon: 'vite', name: 'vite', tipo: 'svg' },
       // { icon: 'tailwind', name: 'tailwind', tipo: 'webp' },
     ],
-    link: '',
+    link: 'https://mirsrobotics.netlify.app',
   },
   {
     titulo: 'Clack TV',
@@ -76,21 +76,21 @@ export const videoItems = [
       // { icon: 'vite', name: 'vite', tipo: 'svg' },
       // { icon: 'tailwind', name: 'tailwind', tipo: 'webp' },
     ],
-    link: '',
+    link: 'https://vtr-clack.netlify-app',
   },
 ];
 
 export const tecnologias = [
-  { icon: 'html', name: 'html' },
-  { icon: 'css', name: 'css' },
-  { icon: 'js', name: 'JavaSript' },
-  { icon: 'vue', name: 'vue', tipo: 'svg' },
-  { icon: 'vite', name: 'vite', tipo: 'svg' },
-  { icon: 'pinia', name: 'pinia' },
-  { icon: 'sass', name: 'sass' },
-  { icon: 'bootstrap', name: 'bootstrap' },
-  { icon: 'tailwind', name: 'tailwind', tipo: 'webp' },
-  { icon: 'git', name: 'git', tipo: 'svg' },
+  { icon: 'html', name: 'HTML' },
+  { icon: 'css', name: 'CSS' },
+  { icon: 'js', name: 'JavaScript' },
+  { icon: 'vue', name: 'Vue.Js', tipo: 'svg' },
+  { icon: 'vite', name: 'Vite', tipo: 'svg' },
+  { icon: 'pinia', name: 'Pinia' },
+  { icon: 'sass', name: 'SASS' },
+  { icon: 'bootstrap', name: 'BootStrap' },
+  { icon: 'tailwind', name: 'Tailwind', tipo: 'webp' },
+  { icon: 'git', name: 'Git', tipo: 'svg' },
 ];
 
 export const dataProyectos = [
@@ -101,8 +101,8 @@ export const dataProyectos = [
     foto: '/proyect-pictures/ryq.webp',
     iconos: [
       // { icon: 'bootstrap', name: 'bootstrap' },
-      { icon: 'html', name: 'html' },
-      { icon: 'css', name: 'css' },
+      { icon: 'html', name: 'HTML' },
+      { icon: 'css', name: 'CSS' },
       { icon: 'js', name: 'js' },
       // { icon: 'sass', name: 'sass' },
       { icon: 'tailwind', name: 'tailwind', tipo: 'webp' },
