@@ -14,7 +14,7 @@
     </div>
     <div class="mb-32">
       <h2 class="text-wave-700 font-semibold text-center text-4xl my-10">Otros Proyectos</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
         <CardProyecto
           v-for="{ titulo, link, descripcion, iconos, foto } in dataProyectos"
           :key="titulo"

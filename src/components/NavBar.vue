@@ -58,7 +58,7 @@
 
   const prueba = () => {
     isOpen.value = !isOpen.value;
-    console.log(isOpen.value);
+   
   };
 
   const scrollHandler = () => {
@@ -111,9 +111,6 @@
       setTimeout(() => {
         scrollPosition.value = scrollY;
       }, 500);
-
-      console.log(initialPos.value);
-      console.log(scrollPosition.value);
 
       initialPos.value < scrollPosition.value
         ? (activeMenu.value = false)

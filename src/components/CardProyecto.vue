@@ -1,6 +1,6 @@
 <template>
   <div
-    class="border flex flex-col gap-3 rounded-lg overflow-hidden items-center border-slate-200 hover:-translate-y-1 transition text-wave-700 shadow-lg"
+    class="border flex flex-col gap-3 rounded-lg overflow-hidden items-center border-slate-200 hover:scale-105 transition text-wave-700 shadow-lg"
   >
     <img :src="foto" alt="ryq" class="h-[200px] w-full object-cover" />
 
