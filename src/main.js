@@ -1,6 +1,7 @@
 import { createApp } from 'vue';
 import './style.css';
 import App from './App.vue';
+import { createHead } from '@vueuse/head';
 // import router from './router/router';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import {
@@ -66,4 +67,6 @@ library.add(
   faEye
 );
 
-createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app');
+const head = createHead();
+
+createApp(App).use(head).component('font-awesome-icon', FontAwesomeIcon).mount('#app');
