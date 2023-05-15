@@ -15,7 +15,6 @@
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/vue-fontawesome": "^3.0.3",
-    "@vueuse/head": "^1.1.26",
     "pinia": "^2.0.32",
     "vue": "^3.2.45",
     "vue3-carousel": "^0.3.1"
