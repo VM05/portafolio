@@ -12,6 +12,7 @@
           icon="fa-regular fa-eye"
           class="bg-wave-700 p-2 rounded-full w-10 text-center text-white"
           :link="link"
+          :nombre="titulo"
         />
       </div>
       <p class="my-5">

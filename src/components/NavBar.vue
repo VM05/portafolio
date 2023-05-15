@@ -10,11 +10,11 @@
         class="h-10 md:h-16 w-auto"
       />
       <div class="flex items-center">
-        <div class="flex items-center">
-          <ul
-            class="list-none flex flex-col absolute md:relative bg-white w-full md:h-full left-0 overflow-hidden transition top-16 md:top-0 md:flex-row items-center gap-5"
-            :class="isOpen && isMobile ? 'max-h-[1000px] h-auto pb-10' : 'h-0  pb-0'"
-          >
+        <div
+          class="list-none flex flex-col md:flex-row absolute md:relative bg-white w-full md:h-full left-0 overflow-hidden transition top-16 md:top-0 items-center gap-5"
+          :class="isOpen && isMobile ? 'max-h-[1000px] h-auto pb-10' : 'h-0  pb-0'"
+        >
+          <ul class="flex flex-col md:flex-row gap-5">
             <li
               v-for="(item, index) in links"
               :class="index === 0 ? 'min-w-[60px]' : 'min-w-[80px]'"
@@ -25,19 +25,20 @@
                 class="hover:text-green-600 transition hover:font-semibold text-center block"
                 :class="{ 'text-green-600 font-semibold': activeMenuItem == item.id }"
                 @click="isOpen = false"
+                :aria-label="item.name"
               >
                 {{ item.name }}
               </a>
             </li>
-
-            <a
-              href="https://drive.google.com/file/d/1ifC1BKCF4r4c0vqU6s-Uk8GSJScaYgSf/view"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <Button secundario texto="Currículum " class="text-white" icono />
-            </a>
           </ul>
+          <a
+            href="https://drive.google.com/file/d/1ifC1BKCF4r4c0vqU6s-Uk8GSJScaYgSf/view"
+            rel="noopener noreferrer"
+            target="_blank"
+            aria-label="curriculum"
+          >
+            <Button secundario texto="Currículum " class="text-white flex md:ml-4" icono />
+          </a>
         </div>
 
         <BurgerIcon @click-toggle="prueba" :cambiar="isOpen" v-if="isMobile" />
