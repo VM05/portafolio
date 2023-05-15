@@ -11,7 +11,7 @@
         >
           {{ titulo }}
         </h3>
-        <a :href="link" v-if="link" target="_blank">
+        <a :href="link" v-if="link" target="_blank" :name="titulo">
           <FontIcon
             icon="fa-regular fa-eye"
             class="bg-white text-wave-700 p-2 rounded-full text-center"

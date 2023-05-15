@@ -7,7 +7,7 @@
     <div class="p-3 h-full flex flex-col flex-grow">
       <div class="flex justify-between items-center">
         <h4 class="text-2xl self-start font-semibold">{{ titulo }}</h4>
-        <a :href="link" v-if="link" target="_blank">
+        <a :href="link" v-if="link" target="_blank" :name="titulo">
           <FontIcon
             icon="fa-regular fa-eye"
             class="bg-wave-700 p-2 rounded-full w-10 text-center text-white"
