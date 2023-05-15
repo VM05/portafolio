@@ -2,7 +2,7 @@
   <footer class="overflow-hidden">
     <div class="footer-wave h-[250px] m-w-[1900px] bg-wave-700 relative -bottom-3 flex text-white">
       <div
-        class="flex flex-col md:flex-row max-w-[1280px] w-full md:px-12 md:justify-between items-center justify-end mb-5 items-center md:items-end mx-auto gap-5 md:pb-10 text-lg"
+        class="flex flex-col md:flex-row max-w-[1280px] w-full md:px-12 md:justify-between items-center justify-end mb-5 md:items-end mx-auto gap-5 md:pb-10 text-lg"
       >
         <h3>Victor Montiel</h3>
         <div class="flex gap-5 text-3xl">
