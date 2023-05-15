@@ -6,7 +6,7 @@
 
     <div class="p-3 h-full flex flex-col flex-grow">
       <div class="flex justify-between items-center">
-        <h4 class="text-2xl font-semibold">{{ titulo }}</h4>
+        <h3 class="text-2xl font-semibold">{{ titulo }}</h3>
 
         <FontIcon
           icon="fa-regular fa-eye"

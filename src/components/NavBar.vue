@@ -22,7 +22,7 @@
               <a
                 :key="item.name"
                 :href="item.url"
-                class="hover:text-green-600 transition hover:font-semibold text-center block"
+                class="hover:text-wave-600 transition hover:font-semibold text-center block"
                 :class="{ 'text-green-600 font-semibold': activeMenuItem == item.id }"
                 @click="isOpen = false"
                 :aria-label="item.name"
@@ -37,7 +37,7 @@
             target="_blank"
             aria-label="curriculum"
           >
-            <Button secundario texto="Currículum " class="text-white flex md:ml-4" icono />
+            <Button secundario texto="Currículum" class="text-white flex md:ml-4" icono />
           </a>
         </div>
 
