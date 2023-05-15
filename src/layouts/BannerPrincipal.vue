@@ -14,7 +14,7 @@
         </h1>
         <h2 class="md:text-4xl mt-2">Front-End Developer</h2>
         <div
-          class="icons mt-5 flex justify-around md:justify-between max-w-[300px] md:text-5xl text-2xl mx-auto md:mx-0"
+          class="icons mt-5 flex gap-10 justify-center md:justify-start max-w-[300px] text-4xl md:text-5xl mx-auto md:mx-0"
         >
           <FontIcon
             v-for="({ icon, name, link }, index) in icons"

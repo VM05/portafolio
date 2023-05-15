@@ -111,6 +111,21 @@ export const dataProyectos = [
     link: 'https://users-list-vue.netlify.app/',
   },
   {
+    titulo: 'PokeApi',
+    descripcion:
+      'un simple juego de adivinanza de pokemons utilizando la pokeApi para su desarrollo, fue un proyecto personal hecho a medida que realizaba un curso de Vue.js.',
+    foto: '/proyect-pictures/pokegame.webp',
+    iconos: [
+      // { icon: 'bootstrap', name: 'bootstrap' },
+      { icon: 'html', name: 'HTML' },
+      { icon: 'css', name: 'CSS' },
+      { icon: 'js', name: 'js' },
+      { icon: 'vue', name: 'vue', tipo: 'svg' },
+      // { icon: 'sass', name: 'sass' },
+    ],
+    link: 'https://practica-vue-pokemon.netlify.app/',
+  },
+  {
     titulo: 'Intranet Kaufmann',
     descripcion:
       'El proyecto Intranet Kaufmann tenía como principal objetivo brindar una plataforma de fácil acceso para los ejecutivos en donde pudieran realizar consultas de precios y ver las novedades de la empresa.',
@@ -138,6 +153,21 @@ export const dataProyectos = [
     ],
     link: 'https://ryqform.netlify.app/',
   },
+  {
+    titulo: 'Viajes.cl',
+    descripcion:
+      'Uno de mis primeros proyectos realizando mi practica profesional, fue una simple landing page para medir mis conocimientos en desarrollo web.',
+    foto: '/proyect-pictures/viajes.webp',
+    iconos: [
+      // { icon: 'bootstrap', name: 'bootstrap' },
+      { icon: 'html', name: 'HTML' },
+      { icon: 'css', name: 'CSS' },
+      { icon: 'js', name: 'js' },
+      // { icon: 'sass', name: 'sass' },
+    ],
+    link: 'https://js-documentation-practice.netlify.app/',
+  },
+
   {
     titulo: 'JavaScript Documentation',
     descripcion:

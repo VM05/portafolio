@@ -21,7 +21,7 @@
               :href="item.url"
               class="hover:text-green-600 transition hover:font-semibold text-center"
               :class="
-                { 'text-green-600 font-semibold': activeMenuItem == item.id },
+               { 'text-green-600 font-semibold': activeMenuItem == item.id },
                 index === 0 ? 'min-w-[60px]' : 'min-w-[80px]'
               "
             >
@@ -58,7 +58,6 @@
 
   const prueba = () => {
     isOpen.value = !isOpen.value;
-   
   };
 
   const scrollHandler = () => {
@@ -102,6 +101,10 @@
     });
 
     window.addEventListener('scroll', () => {
+      if (!window.MSStream && /iPad|iPhone|iPod/.test(navigator.userAgent)) {
+        activeMenu.value = true;
+        return;
+      }
       initialPos.value = window.pageYOffset;
 
       if (initialPos.value <= 100) {
