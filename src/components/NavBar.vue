@@ -15,19 +15,21 @@
             class="list-none flex flex-col absolute md:relative bg-white w-full md:h-full left-0 overflow-hidden transition top-16 md:top-0 md:flex-row items-center gap-5"
             :class="isOpen && isMobile ? 'max-h-[1000px] h-auto pb-10' : 'h-0  pb-0'"
           >
-            <a
+            <li
               v-for="(item, index) in links"
-              :key="item.name"
-              :href="item.url"
-              class="hover:text-green-600 transition hover:font-semibold text-center"
-              :class="
-                { 'text-green-600 font-semibold': activeMenuItem == item.id },
-                index === 0 ? 'min-w-[60px]' : 'min-w-[80px]'
-              "
-              @click="isOpen = false"
+              :class="index === 0 ? 'min-w-[60px]' : 'min-w-[80px]'"
             >
-              {{ item.name }}
-            </a>
+              <a
+                :key="item.name"
+                :href="item.url"
+                class="hover:text-green-600 transition hover:font-semibold text-center block"
+                :class="{ 'text-green-600 font-semibold': activeMenuItem == item.id }"
+                @click="isOpen = false"
+              >
+                {{ item.name }}
+              </a>
+            </li>
+
             <a
               href="https://drive.google.com/file/d/1ifC1BKCF4r4c0vqU6s-Uk8GSJScaYgSf/view"
               rel="noopener noreferrer"

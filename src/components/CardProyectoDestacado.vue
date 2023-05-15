@@ -14,7 +14,7 @@
 
         <FontIcon
           icon="fa-regular fa-eye"
-          class="bg-white text-wave-700 p-2 rounded-full text-center"
+          class="bg-white text-wave-700 p-2 w-10 rounded-full text-center"
           :link="link"
         />
       </div>

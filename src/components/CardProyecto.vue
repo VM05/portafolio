@@ -6,7 +6,7 @@
 
     <div class="p-3 h-full flex flex-col flex-grow">
       <div class="flex justify-between items-center">
-        <h4 class="text-2xl self-start font-semibold">{{ titulo }}</h4>
+        <h4 class="text-2xl font-semibold">{{ titulo }}</h4>
 
         <FontIcon
           icon="fa-regular fa-eye"
@@ -18,7 +18,7 @@
         {{ descripcion }}
       </p>
       <div class="flex flex-col mt-auto">
-        <h4 class="font-semibold">Tecnologías Utilizadas</h4>
+        <h4 class="font-semibold self-start">Tecnologías Utilizadas</h4>
 
         <div class="flex items-center flex-wrap gap-3 my-2">
           <TechIcon

@@ -14,7 +14,7 @@
       alt="bootstrap"
       class="max-w-[60px] max-h-[60px] sombra"
     />
-    <h5 class="text-wave-700 font-semibold">{{ texto }}</h5>
+    <p class="text-wave-700 font-semibold">{{ texto }}</p>
   </div>
 </template>
 
