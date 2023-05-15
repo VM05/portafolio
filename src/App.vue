@@ -23,7 +23,7 @@
 
   useHead({
     meta: [
-      { property: 'og:url', content: 'https://victormontiel.netlify.app/' },
+      { property: 'og:url', content: 'Victor Portfolio' },
       { property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: 'portafolio profesional de victor montiel' },
       {
