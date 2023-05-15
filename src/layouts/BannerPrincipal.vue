@@ -10,7 +10,7 @@
         class="text-intro w-full md:w-1/2 text-white font-semibold md:px-3 text-center md:text-left"
       >
         <h1 class="text-4xl md:text-6xl font-bold">
-          <span class="md:text-3xl">Hola! soy</span><br />Victor Montiel
+          <span class="md:text-3xl">¡Hola! soy</span><br />Victor Montiel
         </h1>
         <h2 class="md:text-4xl mt-2">Front-End Developer</h2>
         <div

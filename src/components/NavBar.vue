@@ -21,9 +21,10 @@
               :href="item.url"
               class="hover:text-green-600 transition hover:font-semibold text-center"
               :class="
-               { 'text-green-600 font-semibold': activeMenuItem == item.id },
+                { 'text-green-600 font-semibold': activeMenuItem == item.id },
                 index === 0 ? 'min-w-[60px]' : 'min-w-[80px]'
               "
+              @click="isOpen = false"
             >
               {{ item.name }}
             </a>
@@ -100,28 +101,29 @@
       window.innerWidth < 600 ? (isMobile.value = true) : (isMobile.value = false);
     });
 
-    window.addEventListener('scroll', () => {
-      if (!window.MSStream && /iPad|iPhone|iPod/.test(navigator.userAgent)) {
-        activeMenu.value = true;
-        return;
-      }
-      initialPos.value = window.pageYOffset;
+    if (!window.MSStream && /iPad|iPhone|iPod/.test(navigator.userAgent)) {
+      activeMenu.value = false;
+      return;
+    } else {
+      window.addEventListener('scroll', () => {
+        initialPos.value = window.pageYOffset;
 
-      if (initialPos.value <= 100) {
-        activeMenu.value = false;
-        return;
-      }
-      setTimeout(() => {
-        scrollPosition.value = scrollY;
-      }, 500);
+        if (initialPos.value <= 100) {
+          activeMenu.value = false;
+          return;
+        }
+        setTimeout(() => {
+          scrollPosition.value = scrollY;
+        }, 500);
 
-      initialPos.value < scrollPosition.value
-        ? (activeMenu.value = false)
-        : (activeMenu.value = true),
-        (isOpen.value = false);
+        initialPos.value < scrollPosition.value
+          ? (activeMenu.value = false)
+          : (activeMenu.value = true),
+          (isOpen.value = false);
 
-      scrollHandler();
-    });
+        scrollHandler();
+      });
+    }
   });
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-  <section id="sobre-mi" class="flex flex-col md:h-[50vh]">
+  <section id="sobre-mi" class="flex flex-col">
     <h2 class="text-center font-semibold text-4xl text-wave-700 mb-10">Sobre mí</h2>
     <div class="flex flex-col-reverse md:flex-row justify-between items-center md:gap-10">
       <div class="w-full md:w-2/3 md:text-lg leading-8 text-center md:text-left">

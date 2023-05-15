@@ -1,5 +1,5 @@
 <template>
-  <section id="contacto" class="my-10">
+  <section id="contacto" class="mt-10 mb-20">
     <h2 class="text-4xl text-wave-700 font-semibold text-center my-10">Contacto</h2>
     <div class="flex flex-col md:flex-row gap-5">
       <div class="text-container w-full md:w-1/2 text-lg p-3 text-center md:text-left">

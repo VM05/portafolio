@@ -1,18 +1,18 @@
 <template>
   <div
-    class="flex flex-col items-center border p-3 gap-5 rounded-xl max-w-[200px] w-full justify-center border-slate-200 shadow-lg h-full transition hover:-translate-x-1 hover:-translate-y-1"
+    class="flex flex-col items-center p-3 gap-5 rounded-xl max-w-[200px] w-full justify-center h-full"
   >
     <img
       v-if="tipo == 'svg'"
       :src="`/tech-icons/${icono}.svg`"
       alt="bootstrap"
-      class="min-w-[60px] max-h-[60px]"
+      class="min-w-[60px] max-h-[60px] sombra"
     />
     <img
       v-else
       :src="`/tech-icons/${icono}.webp`"
       alt="bootstrap"
-      class="max-w-[60px] max-h-[60px]"
+      class="max-w-[60px] max-h-[60px] sombra"
     />
     <h5 class="text-wave-700 font-semibold">{{ texto }}</h5>
   </div>
@@ -29,4 +29,8 @@
   });
 </script>
 
-<style scoped></style>
+<style scoped>
+  .sombra {
+    filter: drop-shadow(3px 4px 1px rgb(0 0 0 / 0.1));
+  }
+</style>

@@ -1,6 +1,6 @@
 <template>
   <h2 class="text-center text-4xl font-semibold text-wave-700 my-10">Conocimientos</h2>
-  <div class="grid justify-items-center gap-4 mb-32">
+  <div class="grid justify-items-center gap-4 mb-20 md:mb-32">
     <CardTecnologia
       v-for="{ name, tipo, icon } in tecnologias"
       :key="name"
