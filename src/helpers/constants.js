@@ -97,7 +97,7 @@ export const dataProyectos = [
   {
     titulo: 'User List',
     descripcion:
-      'El proyecto User list fue un mini proyecto que realice en base a una prueba tecnica, en ella utilice firebase como base de datos para poder validar las personas que se registraban.',
+      'El proyecto User list fue un mini proyecto que realice a partir de una prueba técnica, en ella utilice Firebase como base de datos para poder validar las personas que se registraban.',
     foto: '/proyect-pictures/users-list.webp',
     iconos: [
       // { icon: 'bootstrap', name: 'bootstrap' },

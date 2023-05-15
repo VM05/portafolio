@@ -5,7 +5,7 @@
     <div
       class="bg-blue w-full md:w-2/5 p-10 bg-wave-700 md:absolute md:group-odd:left-0 md:group-even:right-0 md:z-10 md:top-1/2 md:-translate-y-1/2 text-white rounded-b-xl md:rounded-xl contenedor-texto"
     >
-      <div class="flex md:justify-between mb-5 items-center">
+      <div class="flex justify-between mb-5 items-center">
         <h3
           class="text-2xl md:text-4xl md:group-odd:text-left md:group-even:text-right font-semibold"
         >
