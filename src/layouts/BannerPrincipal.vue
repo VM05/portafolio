@@ -22,6 +22,7 @@
             :icon="icon"
             :index="index"
             :link="link"
+            :nombre="name"
           />
         </div>
       </div>
