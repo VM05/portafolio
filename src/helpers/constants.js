@@ -165,7 +165,7 @@ export const dataProyectos = [
       { icon: 'js', name: 'js' },
       // { icon: 'sass', name: 'sass' },
     ],
-    link: 'https://js-documentation-practice.netlify.app/',
+    link: 'https://viajescl.netlify.app/',
   },
 
   {
