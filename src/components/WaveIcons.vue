@@ -1,5 +1,5 @@
 <template>
-  <div class="transition h-[80vh] w-[95vw] top-0 absolute icon-animation text-wave-700 opacity-25">
+  <div class="transition h-[80vh] w-[95vw] top-0 absolute icon-animation text-wave-700">
     <font-awesome-icon
       icon="fa-brands fa-square-js"
       class="absolute bottom-10 md:bottom-20 left-5 md:left-10 wave-icon"
