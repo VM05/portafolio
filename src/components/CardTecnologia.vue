@@ -7,12 +7,14 @@
       :src="`/tech-icons/${icono}.svg`"
       alt="bootstrap"
       class="min-w-[60px] max-h-[60px] sombra"
+      draggable="false"
     />
     <img
       v-else
       :src="`/tech-icons/${icono}.webp`"
       alt="bootstrap"
       class="max-w-[60px] max-h-[60px] sombra"
+      draggable="false"
     />
     <p class="text-wave-700 font-semibold">{{ texto }}</p>
   </div>
