@@ -32,7 +32,7 @@
             </li>
           </ul>
           <a
-            href="https://drive.google.com/file/d/1ifC1BKCF4r4c0vqU6s-Uk8GSJScaYgSf/view"
+            href="https://drive.google.com/file/d/1wHlJfEd3kbmnnt2CTZ1YwnwOVKFE0rLh/view?usp=drive_link"
             rel="noopener noreferrer"
             target="_blank"
             aria-label="curriculum"
