@@ -1,9 +1,9 @@
-import { createApp } from 'vue';
-import './style.css';
-import App from './App.vue';
+import { createApp } from "vue";
+import "./style.css";
+import App from "./App.vue";
 
 // import router from './router/router';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import {
   faBootstrap,
   faCss3,
@@ -21,9 +21,13 @@ import {
   faVuejs,
   faWhatsapp,
   faWordpressSimple,
-} from '@fortawesome/free-brands-svg-icons';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faEye, faFileLines, faNewspaper } from '@fortawesome/free-regular-svg-icons';
+} from "@fortawesome/free-brands-svg-icons";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faEye,
+  faFileLines,
+  faNewspaper,
+} from "@fortawesome/free-regular-svg-icons";
 import {
   faCode,
   faCodeBranch,
@@ -34,7 +38,7 @@ import {
   faCodePullRequest,
   faLaptopCode,
   faTerminal,
-} from '@fortawesome/free-solid-svg-icons';
+} from "@fortawesome/free-solid-svg-icons";
 
 library.add(
   faJsSquare,
@@ -67,4 +71,4 @@ library.add(
   faEye
 );
 
-createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app');
+createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");
