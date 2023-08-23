@@ -70,7 +70,7 @@
               name="user_message"
               id="mensaje"
               rows="5"
-              class="w-full rounded-lg p-3 font-light border border-slate-300"
+              class="w-full rounded-lg p-3 my-3 font-light border border-slate-300"
               placeholder="mensaje"
               v-model="formContacto.mensaje"
               @input="checkMensaje"
@@ -194,23 +194,5 @@
     border-color: rgb(203 213 225);
     margin: 10px 0px;
     border-radius: 5px;
-  }
-
-  @media (max-width: 600px) {
-    input[type='date'] {
-      position: relative;
-    }
-
-    input[type='date']::before {
-      content: '';
-      position: absolute;
-      background: url(../assets/calendar.png) no-repeat;
-      background-size: 50%;
-      top: 70%;
-      right: 0;
-      transform: translateY(-50%);
-      width: 32px;
-      height: 32px;
-    }
   }
 </style>
