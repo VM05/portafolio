@@ -12,7 +12,9 @@
       <div class="flex items-center">
         <div
           class="list-none flex flex-col md:flex-row absolute md:relative bg-white w-full md:h-full left-0 overflow-hidden transition top-16 md:top-0 items-center gap-5"
-          :class="isOpen && isMobile ? 'max-h-[1000px] h-auto pb-10' : 'h-0  pb-0'"
+          :class="
+            isOpen && isMobile ? 'max-h-[1000px] h-auto pb-10' : 'h-0  pb-0'
+          "
         >
           <ul class="flex flex-col md:flex-row gap-5">
             <li
@@ -23,7 +25,9 @@
                 :key="item.name"
                 :href="item.url"
                 class="hover:text-wave-600 transition hover:font-semibold text-center block"
-                :class="{ 'text-green-600 font-semibold': activeMenuItem == item.id }"
+                :class="{
+                  'text-green-600 font-semibold': activeMenuItem == item.id,
+                }"
                 @click="isOpen = false"
                 :aria-label="item.name"
               >
@@ -32,16 +36,25 @@
             </li>
           </ul>
           <a
-            href="https://drive.google.com/file/d/1wHlJfEd3kbmnnt2CTZ1YwnwOVKFE0rLh/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1Fh6jiJbmr5JR6J05kG61YG2AbtD1Vhph/view?usp=drive_link"
             rel="noopener noreferrer"
             target="_blank"
             aria-label="curriculum"
           >
-            <Button secundario texto="Currículum" class="text-white flex md:ml-4" icono />
+            <Button
+              secundario
+              texto="Currículum"
+              class="text-white flex md:ml-4"
+              icono
+            />
           </a>
         </div>
 
-        <BurgerIcon @click-toggle="prueba" :cambiar="isOpen" v-if="isMobile" />
+        <BurgerIcon
+          @click-toggle="toggleMenu"
+          :cambiar="isOpen"
+          v-if="isMobile"
+        />
       </div>
     </div>
   </div>
@@ -60,7 +73,7 @@
   const isMobile = ref(true);
   const isOpen = ref(false);
 
-  const prueba = () => {
+  const toggleMenu = () => {
     isOpen.value = !isOpen.value;
   };
 
@@ -99,9 +112,13 @@
   // };
 
   onMounted(() => {
-    window.innerWidth < 600 ? (isMobile.value = true) : (isMobile.value = false);
+    window.innerWidth < 600
+      ? (isMobile.value = true)
+      : (isMobile.value = false);
     window.addEventListener('resize', () => {
-      window.innerWidth < 600 ? (isMobile.value = true) : (isMobile.value = false);
+      window.innerWidth < 600
+        ? (isMobile.value = true)
+        : (isMobile.value = false);
     });
 
     if (!window.MSStream && /iPad|iPhone|iPod/.test(navigator.userAgent)) {
